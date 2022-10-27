@@ -1,0 +1,21 @@
+<h1> Welcome to Chirpus Pizza!</h1>
+<table>
+<thead>
+  <tr>
+    
+      <th>Item</th>
+      <th>Category</th>
+      <th>Price</th>
+  </tr>
+</thead>
+<tbody>
+  <ng-container  *ngFor="let s of menu">
+    <tr>
+      <td>{{s.item}}  </td>
+      <td>{{s.category}}</td>
+      <td>{{s.price | currency:'USD'}} </td>
+    </tr>
+  </ng-container>
+</tbody>
+</table>
+
